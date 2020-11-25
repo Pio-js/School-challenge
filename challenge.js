@@ -3,7 +3,7 @@ let day = prompt('Which day do you want to check?').toLowerCase();
 let time = parseInt(prompt('What time do you want to check?'));
 
 
-let longWeek = 'friday';
+let longWeek;
 let shortWeek;
 let weekend;
 
@@ -12,6 +12,8 @@ if(day == 'monday' || day == 'tuesday' || day == 'wednesday' || day == 'thursday
     shortWeek = day;
 }else if(day == 'saturday' || day == 'sunday'){
     weekend = day;
+}else if(day == 'friday'){
+    longWeek = day;
 }else{
     alert(day + ' is not a day!');
 }
